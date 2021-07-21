@@ -1,0 +1,15 @@
+version = 1
+
+test_patterns = ["**/*_test.go"]
+
+exclude_patterns = [
+    "db/**",
+    "models/**"
+]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_root = "github.com/Shubhaankar-Sharma/cdn"
